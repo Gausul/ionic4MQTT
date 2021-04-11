@@ -31,9 +31,7 @@ export class HomePage {
  {
   let mqttjson:any='{"sendmsg":"ok"}';
   this._mqttService.unsafePublish("publish topic", mqttjson, {qos: 0, retain: false});
-
 }
-
 
 //connect app on load
  reconnect()
